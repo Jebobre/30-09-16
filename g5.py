@@ -1,8 +1,8 @@
 __author__ = 'student'
-k,n=map(int(input()))
+k,n=map(int,input().split())
 A=[]
-for i in (0,k):
+for i in range(0,k):
     A.append(1)
-for m in (k,n+1):
-    A.append()
+for m in range(k,n+1):
+    A.append(sum(A[m-k:]))
 print(A[-1])
