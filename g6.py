@@ -1,5 +1,12 @@
 __author__ = 'student'
-N=7
-A=[6,1,9,2,3,4,8]
-for i in range(0,len(A)):
-    if A[i]
+N=int(input())
+A=list(map(int,input().split()))
+for i in A:
+    m1=m2=0
+    for x in A:
+        if i>x:
+            m1+=1
+        if x>i:
+            m2+=1
+    if m1==m2:
+        print(i)
